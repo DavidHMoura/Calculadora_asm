@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Assemble & Link calc_hybrid",
+      "type": "shell",
+      "command": "nasm -felf64 calc_hybrid.asm -o calc_hybrid.o && gcc calc_hybrid.o -o calc_hybrid",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run calc_hybrid",
+      "type": "shell",
+      "command": "./calc_hybrid",
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    }
+  ]
+}
