@@ -43,11 +43,11 @@ bash
 nasm -f elf64 calc_hybrid.asm -o calc_hybrid.o
 
 
-###2️⃣ Linkar com a libc e gerar o executável
+2️⃣ Linkar com a libc e gerar o executável
 
 "gcc -no-pie calc_hybrid.o -o calculadora"
 
-###3️⃣ Instalar como comando global
+3️⃣ Instalar como comando global
 
 "sudo mv calculadora /usr/local/bin/"
 🔹 Após isso, o comando calculadora pode ser executado de qualquer diretório no sistema.
